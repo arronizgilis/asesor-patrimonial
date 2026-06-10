@@ -1,177 +1,306 @@
-```html
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gilberto Arroniz | Asesor Patrimonial</title>
+<title>Gilberto Israel Arroniz Nolasco | Asesor Patrimonial</title>
 
-<meta name="description" content="Protección patrimonial, seguros, retiro, bienes raíces y energía solar.">
+<meta name="description" content="Protección patrimonial, seguros, retiro, bienes raíces y energía solar para empresarios y familias.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
---azul:#0d3b66;
---azul2:#1e6091;
---gris:#f5f7fa;
---blanco:#ffffff;
+--dark:#081625;
+--dark2:#10243c;
+--gold:#d4af37;
+--white:#ffffff;
+--gray:#f6f8fb;
+--text:#394150;
 }
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:'Montserrat',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-background:var(--gris);
-color:#333;
+background:#fff;
+color:var(--text);
 }
 
 .hero{
-background:linear-gradient(135deg,#0d3b66,#1e6091);
-color:white;
-padding:60px 20px;
-text-align:center;
+min-height:100vh;
+background:
+linear-gradient(rgba(8,22,37,.90),rgba(8,22,37,.92)),
+url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=2000');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
 }
 
-.foto{
-width:180px;
-height:180px;
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:400px 1fr;
+gap:80px;
+align-items:center;
+}
+
+.profile img{
+width:340px;
+height:340px;
 border-radius:50%;
 object-fit:cover;
-border:5px solid white;
+border:6px solid rgba(212,175,55,.3);
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+
+.badge{
+display:inline-block;
+padding:10px 20px;
+border:1px solid rgba(212,175,55,.4);
+border-radius:50px;
+color:var(--gold);
+font-size:.9rem;
 margin-bottom:20px;
+letter-spacing:2px;
 }
 
 .hero h1{
-font-size:2.4rem;
-margin-bottom:10px;
-}
-
-.hero h2{
-font-size:1.2rem;
-font-weight:300;
+color:white;
+font-size:4rem;
+line-height:1.1;
 margin-bottom:20px;
 }
 
-.hero p{
-max-width:700px;
-margin:auto;
-line-height:1.7;
+.hero h2{
+color:#d9e3f0;
+font-weight:300;
+margin-bottom:30px;
+font-size:1.5rem;
 }
 
-.botones{
-margin-top:25px;
+.hero p{
+color:#b9c7d8;
+line-height:1.9;
+font-size:1.1rem;
+max-width:750px;
+}
+
+.cta{
+margin-top:40px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:14px 25px;
-margin:8px;
-border-radius:40px;
+padding:16px 30px;
+border-radius:50px;
 text-decoration:none;
-font-weight:bold;
+font-weight:700;
+transition:.3s;
 }
 
-.whatsapp{
-background:#25D366;
+.btn-primary{
+background:var(--gold);
+color:#081625;
+}
+
+.btn-secondary{
+background:transparent;
+border:2px solid white;
 color:white;
 }
 
-.linktree{
-background:white;
-color:#0d3b66;
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.metrics{
+margin-top:50px;
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.metric{
+background:rgba(255,255,255,.05);
+padding:18px 24px;
+border-radius:15px;
+color:white;
+}
+
+.metric strong{
+display:block;
+color:var(--gold);
+font-size:1.2rem;
 }
 
 section{
-max-width:1200px;
-margin:auto;
-padding:60px 20px;
+padding:100px 0;
 }
 
-.titulo{
+.section-title{
 text-align:center;
-color:#0d3b66;
-margin-bottom:40px;
+font-size:2.5rem;
+color:var(--dark);
+margin-bottom:15px;
 }
 
-.cards{
+.section-sub{
+text-align:center;
+max-width:800px;
+margin:auto;
+margin-bottom:60px;
+color:#6b7280;
+}
+
+.services{
+background:var(--gray);
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+padding:35px;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 }
 
 .card h3{
-color:#0d3b66;
-margin-bottom:10px;
+margin-bottom:15px;
+color:var(--dark);
+}
+
+.card p{
+line-height:1.8;
 }
 
 .empresas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.empresa{
 background:white;
-padding:40px;
+padding:30px;
 border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+font-weight:700;
 }
 
-.empresas ul{
-padding-left:20px;
-line-height:2;
+.contact{
+background:var(--dark);
+color:white;
+text-align:center;
 }
 
-.contacto{
-background:white;
+.contact h2{
+color:white;
+}
+
+.contact-box{
+max-width:900px;
+margin:auto;
+background:rgba(255,255,255,.05);
 padding:40px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+border-radius:25px;
 }
 
-.contacto p{
-margin:12px 0;
+.contact-box p{
+margin:15px 0;
+font-size:1.1rem;
 }
 
 details{
+max-width:1100px;
+margin:auto;
 background:white;
-padding:25px;
+padding:30px;
 border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 summary{
 cursor:pointer;
+font-weight:700;
 font-size:1.2rem;
-font-weight:bold;
-color:#0d3b66;
+color:var(--dark);
 }
 
 footer{
-background:#0d3b66;
-color:white;
-padding:30px;
+background:#050d18;
+color:#9aa8ba;
+padding:40px;
 text-align:center;
-margin-top:50px;
 }
 
-.float{
+.whatsapp{
 position:fixed;
 bottom:25px;
 right:25px;
+width:70px;
+height:70px;
 background:#25D366;
-color:white;
-padding:18px;
 border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
 text-decoration:none;
-font-size:26px;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
+font-size:32px;
+color:white;
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+@media(max-width:900px){
+
+.hero-content{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.profile img{
+width:260px;
+height:260px;
+}
+
+.hero h1{
+font-size:2.7rem;
+}
+
+.cta{
+justify-content:center;
+}
+
+.metrics{
+justify-content:center;
+}
+
 }
 
 </style>
@@ -181,62 +310,121 @@ box-shadow:0 5px 15px rgba(0,0,0,.3);
 
 <header class="hero">
 
-<img src="gilberto.jpg" class="foto" alt="Gilberto Arroniz">
+<div class="container">
 
-<h1>Gilberto Israel Arroniz Nolasco</h1>
+<div class="hero-content">
 
-<h2>Asesor Patrimonial Integral</h2>
+<div class="profile">
+<img src="gilberto.jpg" alt="Gilberto Arroniz">
+</div>
+
+<div>
+
+<div class="badge">
+ASESOR PATRIMONIAL INTEGRAL
+</div>
+
+<h1>
+Protege tu patrimonio.
+Impulsa tu futuro.
+</h1>
+
+<h2>
+Estrategias para empresarios, profesionistas y familias que buscan crecer con seguridad.
+</h2>
 
 <p>
-Ayudo a familias, profesionistas y empresarios a proteger, construir y preservar su patrimonio mediante estrategias en seguros, salud, retiro, bienes raíces y energía solar.
+Mi misión es ayudarte a proteger lo que has construido y diseñar estrategias que fortalezcan tu patrimonio mediante soluciones en seguros, salud, retiro, bienes raíces y energía solar.
 </p>
 
-<div class="botones">
+<div class="cta">
 
-<a class="btn whatsapp"
-href="https://wa.me/529991692521">
-WhatsApp
+<a href="https://wa.me/529991692521" class="btn btn-primary">
+Solicitar Asesoría
 </a>
 
-<a class="btn linktree"
-href="https://linktr.ee/tuasesorgil"
-target="_blank">
+<a href="https://linktr.ee/tuasesorgil" target="_blank" class="btn btn-secondary">
 Redes Sociales
 </a>
 
 </div>
 
+<div class="metrics">
+
+<div class="metric">
+<strong>Salud</strong>
+Protección médica
+</div>
+
+<div class="metric">
+<strong>Vida</strong>
+Seguridad familiar
+</div>
+
+<div class="metric">
+<strong>Retiro</strong>
+Planeación patrimonial
+</div>
+
+<div class="metric">
+<strong>Inmuebles</strong>
+Construcción patrimonial
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </header>
 
-<section>
+<section class="services">
 
-<h2 class="titulo">Áreas de Especialización</h2>
+<div class="container">
 
-<div class="cards">
+<h2 class="section-title">
+Soluciones Patrimoniales
+</h2>
+
+<p class="section-sub">
+Una estrategia integral para proteger, conservar y multiplicar tu patrimonio.
+</p>
+
+<div class="grid">
 
 <div class="card">
 <h3>🏥 Gastos Médicos Mayores</h3>
-<p>Protección médica nacional e internacional para individuos, familias y empresas.</p>
+<p>Protección financiera ante enfermedades y accidentes con cobertura nacional e internacional.</p>
 </div>
 
 <div class="card">
-<h3>❤️ Seguros de Vida</h3>
-<p>Protección familiar, continuidad patrimonial y sucesión financiera.</p>
+<h3>🩺 Quálitas Salud</h3>
+<p>Planes de salud con acceso a atención médica privada, consultas y esquemas de reembolso.</p>
 </div>
 
 <div class="card">
-<h3>📈 Planeación para el Retiro</h3>
-<p>Planes Personales de Retiro con beneficios fiscales.</p>
+<h3>❤️ Seguro de Vida</h3>
+<p>Protección familiar, continuidad patrimonial y respaldo para quienes más importan.</p>
+</div>
+
+<div class="card">
+<h3>📈 Plan Personal de Retiro</h3>
+<p>Construye independencia financiera aprovechando beneficios fiscales.</p>
 </div>
 
 <div class="card">
 <h3>🏢 Bienes Raíces</h3>
-<p>Desarrollo y crecimiento patrimonial mediante inversión inmobiliaria.</p>
+<p>Opciones inmobiliarias enfocadas en crecimiento patrimonial de largo plazo.</p>
 </div>
 
 <div class="card">
-<h3>☀️ Energía Solar</h3>
-<p>Reducción de costos energéticos y mejora del patrimonio familiar y empresarial.</p>
+<h3>☀️ Paneles Solares</h3>
+<p>Reducción de costos operativos y mejora del valor de inmuebles residenciales y comerciales.</p>
+</div>
+
 </div>
 
 </div>
@@ -244,43 +432,46 @@ Redes Sociales
 </section>
 
 <section>
+
+<div class="container">
+
+<h2 class="section-title">
+Empresas y Soluciones
+</h2>
 
 <div class="empresas">
 
-<h2 class="titulo">Empresas y Soluciones con las que Colaboro</h2>
+<div class="empresa">Ávila Finanzas</div>
+<div class="empresa">Seguros Monterrey New York Life</div>
+<div class="empresa">Quálitas Salud</div>
+<div class="empresa">Solars México</div>
+<div class="empresa">Patrimonio Peninsular</div>
 
-<ul>
-<li>Ávila Finanzas</li>
-<li>Seguros Monterrey New York Life</li>
-<li>Quálitas Salud</li>
-<li>Solars México</li>
-<li>Patrimonio Peninsular</li>
-</ul>
+</div>
 
 </div>
 
 </section>
 
-<section>
+<section class="contact">
 
-<div class="contacto">
+<div class="container">
 
-<h2 class="titulo">Contacto</h2>
+<h2 class="section-title">
+Contacto
+</h2>
 
-<p><strong>WhatsApp:</strong> 999 169 2521</p>
+<div class="contact-box">
 
-<p><strong>Correo:</strong> arronizgilis@gmail.com</p>
+<p>📱 WhatsApp: 999 169 2521</p>
 
-<p><strong>Domicilio:</strong><br>
-Calle 28B No. 292 por 27C Diagonal<br>
-Colonia Polígono Itzimná 108<br>
-CP 97143, Mérida, Yucatán
-</p>
+<p>📧 arronizgilis@gmail.com</p>
 
-<p>
-<strong>Redes sociales:</strong><br>
-https://linktr.ee/tuasesorgil
-</p>
+<p>🌐 linktr.ee/tuasesorgil</p>
+
+<p>📍 Mérida, Yucatán, México</p>
+
+</div>
 
 </div>
 
@@ -295,23 +486,12 @@ https://linktr.ee/tuasesorgil
 <br>
 
 <p>
-Gilberto Israel Arroniz Nolasco, Asesor Patrimonial y Agente de Seguros, es responsable del tratamiento de los datos personales que recaba para fines de asesoría financiera, seguros, salud, retiro, bienes raíces y servicios relacionados.
+Gilberto Israel Arroniz Nolasco es responsable del tratamiento de los datos personales recabados para fines de asesoría patrimonial, seguros, salud, retiro, bienes raíces y servicios relacionados.
 </p>
 
 <p>
-Los datos podrán ser utilizados para cotizaciones, análisis de necesidades, contratación de productos, trámites administrativos, seguimiento de clientes y cumplimiento de obligaciones legales.
-</p>
-
-<p>
-Para ejercer Derechos ARCO o realizar cualquier consulta relacionada con el tratamiento de sus datos personales, puede comunicarse a:
-</p>
-
-<p>
-📧 arronizgilis@gmail.com
-</p>
-
-<p>
-Última actualización: junio 2026.
+Para ejercer derechos ARCO o solicitar información relacionada con el tratamiento de sus datos personales puede escribir a:
+arronizgilis@gmail.com
 </p>
 
 </details>
@@ -320,18 +500,15 @@ Para ejercer Derechos ARCO o realizar cualquier consulta relacionada con el trat
 
 <footer>
 
-<p>
-© 2026 Gilberto Israel Arroniz Nolasco
-</p>
+<p><strong>Gilberto Israel Arroniz Nolasco</strong></p>
 
-<p>
-Asesor Patrimonial Integral
-</p>
+<p>Asesor Patrimonial Integral</p>
+
+<p>© 2026 Todos los derechos reservados.</p>
 
 </footer>
 
-<a class="float"
-href="https://wa.me/529991692521">
+<a href="https://wa.me/529991692521" class="whatsapp">
 💬
 </a>
 
