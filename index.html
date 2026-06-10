@@ -3,50 +3,87 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gilberto Israel Arroniz Nolasco | Asesor Patrimonial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gilberto Arroniz | Asesor Patrimonial</title>
+
+<meta name="description" content="Protección patrimonial, seguros, retiro, bienes raíces y energía solar.">
 
 <style>
+
+:root{
+--azul:#0d3b66;
+--azul2:#1e6091;
+--gris:#f5f7fa;
+--blanco:#ffffff;
+}
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,Arial,sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f5f7fa;
+background:var(--gris);
 color:#333;
-line-height:1.6;
 }
 
-header{
-background:linear-gradient(135deg,#0d3b66,#1d5fa7);
+.hero{
+background:linear-gradient(135deg,#0d3b66,#1e6091);
 color:white;
-padding:80px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
-header h1{
-font-size:3rem;
+.foto{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:2.4rem;
 margin-bottom:10px;
 }
 
-header p{
+.hero h2{
 font-size:1.2rem;
-opacity:.95;
+font-weight:300;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.7;
+}
+
+.botones{
+margin-top:25px;
 }
 
 .btn{
 display:inline-block;
-margin:10px;
-padding:12px 24px;
+padding:14px 25px;
+margin:8px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.linktree{
 background:white;
 color:#0d3b66;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
 }
 
 section{
@@ -55,63 +92,86 @@ margin:auto;
 padding:60px 20px;
 }
 
-h2{
+.titulo{
+text-align:center;
 color:#0d3b66;
-margin-bottom:20px;
+margin-bottom:40px;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:15px;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .card h3{
-margin-bottom:10px;
 color:#0d3b66;
+margin-bottom:10px;
 }
 
-.proceso{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-text-align:center;
-}
-
-.paso{
+.empresas{
 background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.empresas ul{
+padding-left:20px;
+line-height:2;
 }
 
 .contacto{
 background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contacto p{
+margin:12px 0;
 }
 
 details{
 background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+summary{
+cursor:pointer;
+font-size:1.2rem;
+font-weight:bold;
+color:#0d3b66;
 }
 
 footer{
 background:#0d3b66;
 color:white;
-text-align:center;
 padding:30px;
+text-align:center;
 margin-top:50px;
+}
+
+.float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:18px;
+border-radius:50%;
+text-decoration:none;
+font-size:26px;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 
 </style>
@@ -119,62 +179,64 @@ margin-top:50px;
 
 <body>
 
-<header>
+<header class="hero">
+
+<img src="gilberto.jpg" class="foto" alt="Gilberto Arroniz">
 
 <h1>Gilberto Israel Arroniz Nolasco</h1>
 
-<p>Asesor Patrimonial Integral</p>
+<h2>Asesor Patrimonial Integral</h2>
 
-<p>Protección • Salud • Patrimonio • Retiro • Inversión</p>
+<p>
+Ayudo a familias, profesionistas y empresarios a proteger, construir y preservar su patrimonio mediante estrategias en seguros, salud, retiro, bienes raíces y energía solar.
+</p>
 
-<a class="btn" href="mailto:arronizgilis@gmail.com">Correo</a>
+<div class="botones">
+
+<a class="btn whatsapp"
+href="https://wa.me/529991692521">
+WhatsApp
+</a>
+
+<a class="btn linktree"
+href="https://linktr.ee/tuasesorgil"
+target="_blank">
+Redes Sociales
+</a>
+
+</div>
 
 </header>
 
 <section>
 
-<h2>Sobre mí</h2>
-
-<p>
-Ayudo a familias, profesionistas y empresarios a proteger, crecer y preservar su patrimonio mediante estrategias integrales de seguros, planeación financiera, retiro, bienes raíces y soluciones de energía solar.
-</p>
-
-</section>
-
-<section>
-
-<h2>Servicios Profesionales</h2>
+<h2 class="titulo">Áreas de Especialización</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>🏥 Gastos Médicos Mayores</h3>
-<p>Protección nacional e internacional para individuos y empresas.</p>
+<p>Protección médica nacional e internacional para individuos, familias y empresas.</p>
 </div>
 
 <div class="card">
-<h3>🩺 Quálitas Salud</h3>
-<p>Soluciones de salud accesibles con amplias coberturas y reembolso.</p>
+<h3>❤️ Seguros de Vida</h3>
+<p>Protección familiar, continuidad patrimonial y sucesión financiera.</p>
 </div>
 
 <div class="card">
-<h3>❤️ Seguro de Vida</h3>
-<p>Protección familiar y continuidad patrimonial.</p>
-</div>
-
-<div class="card">
-<h3>📈 Plan Personal de Retiro</h3>
-<p>Estrategias de ahorro para retiro con beneficios fiscales.</p>
+<h3>📈 Planeación para el Retiro</h3>
+<p>Planes Personales de Retiro con beneficios fiscales.</p>
 </div>
 
 <div class="card">
 <h3>🏢 Bienes Raíces</h3>
-<p>Construcción de patrimonio mediante proyectos inmobiliarios.</p>
+<p>Desarrollo y crecimiento patrimonial mediante inversión inmobiliaria.</p>
 </div>
 
 <div class="card">
-<h3>☀️ Paneles Solares</h3>
-<p>Reducción de gastos energéticos e incremento del valor patrimonial.</p>
+<h3>☀️ Energía Solar</h3>
+<p>Reducción de costos energéticos y mejora del patrimonio familiar y empresarial.</p>
 </div>
 
 </div>
@@ -183,39 +245,29 @@ Ayudo a familias, profesionistas y empresarios a proteger, crecer y preservar su
 
 <section>
 
-<h2>Mi Proceso de Trabajo</h2>
+<div class="empresas">
 
-<div class="proceso">
+<h2 class="titulo">Empresas y Soluciones con las que Colaboro</h2>
 
-<div class="paso">
-<h3>1. Diagnóstico</h3>
-<p>Análisis de objetivos y necesidades.</p>
-</div>
-
-<div class="paso">
-<h3>2. Estrategia</h3>
-<p>Diseño de soluciones personalizadas.</p>
-</div>
-
-<div class="paso">
-<h3>3. Implementación</h3>
-<p>Puesta en marcha del plan.</p>
-</div>
-
-<div class="paso">
-<h3>4. Seguimiento</h3>
-<p>Acompañamiento continuo.</p>
-</div>
+<ul>
+<li>Ávila Finanzas</li>
+<li>Seguros Monterrey New York Life</li>
+<li>Quálitas Salud</li>
+<li>Solars México</li>
+<li>Patrimonio Peninsular</li>
+</ul>
 
 </div>
 
 </section>
 
 <section>
-
-<h2>Contacto</h2>
 
 <div class="contacto">
+
+<h2 class="titulo">Contacto</h2>
+
+<p><strong>WhatsApp:</strong> 999 169 2521</p>
 
 <p><strong>Correo:</strong> arronizgilis@gmail.com</p>
 
@@ -225,35 +277,41 @@ Colonia Polígono Itzimná 108<br>
 CP 97143, Mérida, Yucatán
 </p>
 
+<p>
+<strong>Redes sociales:</strong><br>
+https://linktr.ee/tuasesorgil
+</p>
+
 </div>
 
 </section>
 
 <section>
 
-<h2>Aviso de Privacidad</h2>
-
 <details>
 
-<summary><strong>Consultar Aviso de Privacidad</strong></summary>
+<summary>📄 Aviso de Privacidad</summary>
 
 <br>
 
 <p>
-Gilberto Israel Arroniz Nolasco, Agente de Seguros, es responsable del tratamiento de los datos personales que recaba para fines de asesoría patrimonial, contratación de seguros, planeación financiera, bienes raíces y servicios relacionados.
+Gilberto Israel Arroniz Nolasco, Asesor Patrimonial y Agente de Seguros, es responsable del tratamiento de los datos personales que recaba para fines de asesoría financiera, seguros, salud, retiro, bienes raíces y servicios relacionados.
 </p>
 
 <p>
-Los datos serán utilizados para cotizaciones, análisis financieros, emisión de pólizas, trámites administrativos, atención a clientes y cumplimiento de obligaciones legales.
+Los datos podrán ser utilizados para cotizaciones, análisis de necesidades, contratación de productos, trámites administrativos, seguimiento de clientes y cumplimiento de obligaciones legales.
 </p>
 
 <p>
-Los titulares podrán ejercer sus Derechos ARCO mediante solicitud enviada al correo:
-arronizgilis@gmail.com
+Para ejercer Derechos ARCO o realizar cualquier consulta relacionada con el tratamiento de sus datos personales, puede comunicarse a:
 </p>
 
 <p>
-Última actualización: 10 de junio de 2026.
+📧 arronizgilis@gmail.com
+</p>
+
+<p>
+Última actualización: junio 2026.
 </p>
 
 </details>
@@ -271,6 +329,11 @@ Asesor Patrimonial Integral
 </p>
 
 </footer>
+
+<a class="float"
+href="https://wa.me/529991692521">
+💬
+</a>
 
 </body>
 </html>
